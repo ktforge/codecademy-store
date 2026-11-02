@@ -1,0 +1,17 @@
+import React from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+
+import { App } from "./app/App.jsx";
+const root = createRoot(document.getElementById("root"));
+// Import the store here.
+import { store } from "./app/store.js";
+// Pass state and dispatch props to the <App /> component.
+const render = () => {
+  root.render(<App state={store.getState()} dispatch={store.dispatch} />);
+};
+render();
+
+// Subscribe render to the store.
+// redraws the app every time an action changes the state
+store.subscribe(render);
