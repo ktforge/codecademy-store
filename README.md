@@ -31,6 +31,8 @@ Writing the reducers made immutable updates click for me. Every case returns a n
 
 The search bar was an extra challenge at the end. I added a `searchTerm` slice the same way as the others and filter the inventory in `App` before passing it to `Inventory`.
 
+After it went live I noticed that searching for one product made its card stretch across the whole page. The grid used `auto-fit`, which collapses the empty columns and lets the last card take all the space. Switching to `auto-fill` keeps those empty columns, so a single result stays the same size as the rest.
+
 I built it in Codecademy's workspace first, then moved it over to Vite so I could put it online. That meant renaming the component files to `.jsx`, moving `data.js` into `src`, and importing the CSS in `index.jsx`.
 
 ## Running it

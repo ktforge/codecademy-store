@@ -86,12 +86,12 @@ body,
   width: 100%;
 }
 
-/* as many 225px+ columns as fit the screen */
+/* auto-fill keeps empty columns, so one search result stays card sized instead of stretching */
 #inventory-container {
   flex-wrap: wrap;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
   gap: 12px 12px;
 }
 
