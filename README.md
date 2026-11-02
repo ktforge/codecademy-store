@@ -2,7 +2,7 @@
 
 This is a small React and Redux store I built for the Codecademy Store project on Codecademy's Full-Stack Engineer path. It shows Codecademy merch, lets you add items to a cart, change how many of each you want, and switch the whole store between US dollars, euros, and Canadian dollars.
 
-**Live site:** coming soon
+**Live site:** https://codecademy-store-devante.netlify.app
 
 ## What it does
 
